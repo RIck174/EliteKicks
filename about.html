@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/Website Logo.svg" alt="Logo">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="User">
+            <ul>
+                <li>
+                    <div class="nav-cart">
+                        <ion-icon name="cart-outline" class="cart-icon" id="cartIcon"></ion-icon>
+                        <span class="cart-count">0</span>
+                        <div class="cart-popup" id="cartPopup">
+                            <h4>Cart</h4>
+                            <div id="cartItemsContainer">
+                                <p>Your cart is empty.</p>
+                            </div>
+                            <button id="checkoutBtn" onclick="window.location.href='checkout.html'">Checkout</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="wish-icon">
+                        <a href="wishlist.html">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <span class="wishlist-count">0</span>
+                        </a>
+                    </div>
+                </li>
+                <li><a href="search.html"><ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="about-container">
+    
+        <!-- Hero Section -->
+        <div class="about-hero">
+            <h1>About Elite Kicks</h1>
+            <p>Where passion for premium footwear meets unparalleled service.</p>
+        </div>
+    
+        <!-- Our Story Section -->
+        <div class="about-story">
+            <img src="images/Website Logo.svg"
+                alt="Elite Kicks store interior with modern shoe displays and clean lighting" />
+            <div class="about-box">
+                <h2>Our Story</h2>
+                <p>Founded in 2015, Elite Kicks began as a small boutique in downtown Los Angeles with a simple vision: to
+                    bring the world's finest footwear to discerning customers.</p>
+                <p>What started as a passion project between sneaker enthusiasts quickly grew into one of the most respected
+                    destinations for premium footwear on the West Coast.</p>
+                <p>Today, we operate flagship stores in three cities and ship internationally through our online store,
+                    maintaining the same commitment to quality and service that started it all.</p>
+            </div>
+        </div>
+    
+        <!-- Mission Section -->
+        <div class="about-mission">
+            <h2>Our Mission</h2>
+            <div class="about-mission-items">
+                <div class="about-box">
+                    <h3>🔄 Curated Selection</h3>
+                    <p>We hand-select every item in our inventory, ensuring only the finest quality and most exclusive
+                        releases make it to our customers.</p>
+                </div>
+                <div class="about-box">
+                    <h3>🌟 Premium Experience</h3>
+                    <p>From unboxing to aftercare, we deliver a luxury experience that matches the exceptional products we
+                        carry.</p>
+                </div>
+                <div class="about-box">
+                    <h3>🤝 Sneaker Culture</h3>
+                    <p>We're more than a store - we're ambassadors of sneaker culture, hosting events and collaborations to
+                        grow our community.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Testimonials -->
+        <div class="about-testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="about-box">
+                <h3>Alex Turner</h3>
+                <p>"The attention to detail Elite Kicks provides is unmatched. My grail pair arrived in perfect condition
+                    with impeccable packaging."</p>
+            </div>
+            <div class="about-box">
+                <h3>Jamila Wilson</h3>
+                <p>"I've bought from every major sneaker retailer, but Elite Kicks' service makes them stand out. Their
+                    authentication process gives me complete peace of mind."</p>
+            </div>
+            <div class="about-box">
+                <h3>Ryan Park</h3>
+                <p>"Their limited edition releases are always handled professionally. Never had an issue with packaging or
+                    authenticity, which is rare in this industry."</p>
+            </div>
+        </div>
+    
+        <!-- Values Section -->
+        <div class="about-values">
+            <h2>Our Core Values</h2>
+            <div class="about-values-items">
+                <div class="about-box">
+                    <h3>1. Authenticity</h3>
+                    <p>Every product undergoes rigorous verification by our authentication team. We stand behind every item
+                        we sell.</p>
+                </div>
+                <div class="about-box">
+                    <h3>2. Exclusivity</h3>
+                    <p>We specialize in hard-to-find releases and limited edition collaborations unavailable through
+                        mainstream retailers.</p>
+                </div>
+                <div class="about-box">
+                    <h3>3. Service</h3>
+                    <p>Our concierge-style service includes personalized recommendations, styling advice, and VIP-level
+                        support.</p>
+                </div>
+                <div class="about-box">
+                    <h3>4. Community</h3>
+                    <p>We host exclusive events, release parties, and collector meetups to connect like-minded enthusiasts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- CTA Section -->
+        <div class="about-cta">
+            <h2>Ready to Experience Elite Kicks?</h2>
+            <p>Shop our curated collection of premium footwear today or visit one of our flagship stores.</p>
+            <a href="shop.html">Shop Now</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    
+        </div>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="info">
+            <h2>Stay Updated, Stay Connected</h2>
+            <section class="subscribe">
+                <h3>Get Our News And Updates</h3>
+                <form action="#" method="post">
+                    <input type="email" class="subscribe-input" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+                <p>By subscribing you agree to our <a>Privacy Policy</a></p>
+            </section>
+        </div>
+    
+        <div class="footer-links">
+            <div class="socials">
+                <img src="images/Website Logo.svg" alt="Logo">
+                <p>Seamless transations, personalized insights, and innovative solutions for a smarter tomorrow.</p>
+                <div class="social-icons">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+            </div>
+            <div class="links">
+                <section class="link">
+                    <h3>Help</h3>
+                    <p>Help Center</p>
+                    <p>Support Team</p>
+                    <p>Community</p>
+                    <p>FAQs</p>
+                </section>
+                <section class="link">
+                    <h3>Company</h3>
+                    <p>About Us</p>
+                    <p>Contact</p>
+                    <p>News & Blogs</p>
+                </section>
+                <section class="link">
+                    <h3>About</h3>
+                    <h3>Product</h3>
+                </section>
+            </div>
+    
+        </div>
+        <p class="copyright">&copy; 2025 PrimeProperty. All rights reserved.</p>
+    </footer>
+    
+
+    <script type="module" src="shop.js"></script>
+    <script type="module" src="cart.js"></script>
+    <script type="module" src="Java.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/Website Logo.svg" alt="Logo">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="User">
+            <ul>
+                <li>
+                    <div class="nav-cart">
+                        <ion-icon name="cart-outline" class="cart-icon" id="cartIcon"></ion-icon>
+                        <span class="cart-count">0</span>
+                        <div class="cart-popup" id="cartPopup">
+                            <h4>Cart</h4>
+                            <div id="cartItemsContainer">
+                                <p>Your cart is empty.</p>
+                            </div>
+                            <button id="checkoutBtn" onclick="window.location.href='checkout.html'">Checkout</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="wish-icon">
+                        <a href="wishlist.html">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <span class="wishlist-count">0</span>
+                        </a>
+                    </div>
+                </li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </div>
+    
+    
+    </div>
+
+    <section class="signup-container">
+        <div class="signup-card">
+            <h1>Join Our Shoe Club</h1>
+            <p>Sign up to receive updates on new shipments, exclusive discounts, and fresh sneaker drops.</p>
+
+            <div class="social-login">
+                <button class="fb-btn"><i class="fab fa-facebook-f"></i> Sign up with Facebook</button>
+                <button class="google-btn"><i class="fab fa-google"></i> Sign up with Google</button>
+            </div>
+
+            <div class="divider">or</div>
+
+            <form class="signup-form" id="signupForm">
+                <input type="text" name="fullName" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Email address" required />
+                <input type="password" name="password" placeholder="Password" required />
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" required />
+                <button type="submit">Create Account</button>
+                <p class="signup-text">Already have an account? <a href="Login.html">Sign in here</a></p>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="Java.js"></script>
+</body>
+</html>

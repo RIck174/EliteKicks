@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="images/Website Logo.svg" alt="Logo">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="User">
+            <ul>
+                <li>
+                    <div class="nav-cart">
+                        <ion-icon name="cart-outline" class="cart-icon" id="cartIcon"></ion-icon>
+                        <span class="cart-count">0</span>
+                        <div class="cart-popup" id="cartPopup">
+                            <h4>Cart</h4>
+                            <div id="cartItemsContainer">
+                                <p>Your cart is empty.</p>
+                            </div>
+                            <button id="checkoutBtn" onclick="window.location.href='checkout.html'">Checkout</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="wish-icon">
+                        <a href="wishlist.html">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <span class="wishlist-count">0</span>
+                        </a>
+                    </div>
+                </li>
+                <li><a href="Login.html">SignUp</a></li>
+            </ul>
+        </div>
+    
+    
+    </div>
+    
+
+    <section class="signin-container">
+        <div class="signin-card">
+            <h1>Sign In / Join ShoeClub</h1>
+            <p>Log in to keep track of your favorite sneakers, access exclusive drops, and manage your cart & wishlist.</p>
+    
+            <div class="social-login">
+                <button class="fb-btn"><i class="fab fa-facebook-f"></i> Log in with Facebook</button>
+                <button class="google-btn"><i class="fab fa-google"></i> Log in with Google</button>
+            </div>
+    
+            <div class="divider">or</div>
+    
+            <form id="loginForm" class="signin-form">
+                <input type="email" id="email" placeholder="Email address" required />
+                <input type="password" id="password" placeholder="Password" required />
+                <button type="submit">Continue</button>
+                <p class="signup-text">Don't have an account? <a href="SignUp.html">Create one</a></p>
+            </form>
+        </div>
+    
+        <div class="signin-benefits">
+            <h2>Why Join ShoeClub?</h2>
+            <ul>
+                <li><strong>👟 Exclusive Sneakers</strong><br>Be the first to access new sneaker releases.</li>
+                <li><strong>🛒 Manage Cart & Wishlist</strong><br>Keep your favorite shoes ready for purchase.</li>
+                <li><strong>💰 Special Discounts</strong><br>Get notified of exclusive deals and offers.</li>
+                <li><strong>✨ Personalized Recommendations</strong><br>Discover sneakers tailored to your style.</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="info">
+            <h2>Stay Updated, Stay Connected</h2>
+            <section class="subscribe">
+                <h3>Get Our News And Updates</h3>
+                <form action="#" method="post">
+                    <input type="email" class="subscribe-input" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+                <p>By subscribing you agree to our <a>Privacy Policy</a></p>
+            </section>
+        </div>
+    
+        <div class="footer-links">
+            <div class="socials">
+                <img src="images/Website Logo.svg" alt="Logo">
+                <p>Seamless transations, personalized insights, and innovative solutions for a smarter tomorrow.</p>
+                <div class="social-icons">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+            </div>
+            <div class="links">
+                <section class="link">
+                    <h3>Help</h3>
+                    <p>Help Center</p>
+                    <p>Support Team</p>
+                    <p>Community</p>
+                    <p>FAQs</p>
+                </section>
+                <section class="link">
+                    <h3>Company</h3>
+                    <p>About Us</p>
+                    <p>Contact</p>
+                    <p>News & Blogs</p>
+                </section>
+                <section class="link">
+                    <h3>About</h3>
+                    <h3>Product</h3>
+                </section>
+            </div>
+    
+        </div>
+        <p class="copyright">&copy; 2025 PrimeProperty. All rights reserved.</p>
+    </footer>
+
+
+    <script type="module" src="Java.js"></script>
+</body>
+</html>
